@@ -1,0 +1,123 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.littlebrains.roadtothedream.MainFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/desc_dream"
+                fontPath="fonts/Roboto-Regular.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Опиши свою мечту"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                tools:ignore="MissingPrefix" />
+
+            <EditText
+                android:id="@+id/dream"
+                fontPath="fonts/Roboto-Regular.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Прямо сейчас!"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textSize="14sp"
+                tools:ignore="MissingPrefix" />
+
+            <Button
+                android:id="@+id/dream_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawablePadding="16dp"
+                android:drawableStart="@drawable/ic_action_done"
+                android:paddingEnd="16dp"
+                android:text="Готово!"
+                android:textSize="16sp"
+                android:theme="@style/BlackButton" />
+
+            <TextView
+                android:id="@+id/plan"
+                fontPath="fonts/Roboto-Regular.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="2sp"
+                android:text="В тот момент когда ты написал свою мечту, она стала целью. Теперь ты должен к ней идти. У тебя есть цель! Подумай и составь план действий необходимых для достижения твоей цели.\nОпиши эти пункты"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:visibility="gone"
+                tools:ignore="MissingPrefix" />
+
+            <LinearLayout
+                android:id="@+id/container_plan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <include layout="@layout/item_material" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/plans_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawablePadding="16dp"
+                android:drawableStart="@drawable/ic_action_done"
+                android:paddingEnd="16dp"
+                android:text="Готово!"
+                android:textSize="16sp"
+                android:theme="@style/BlackButton"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textView2"
+                fontPath="fonts/Roboto-Regular.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="2sp"
+                android:text="Отлично! Незабывай что все возможно. У тебя есть цель, у тебя есть план. Приступай к действиям!"
+                android:textSize="16sp"
+                android:visibility="gone"
+                tools:ignore="MissingPrefix" />
+
+            <TextView
+                android:id="@+id/textView3"
+                fontPath="fonts/Roboto-Regular.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="2sp"
+                android:text="Большие мечты часто остаются несбывшимися, потому что пугают своим масштабом, но каждую мечту можно разбить на много маленьких шажков которые необходимо сделать для достижения мечты. Ты можешь разделить свою главную цель на маленькие под цели, тогда это не будет тебя пугать, ты увидишь что выполняя небольшие действия ты приближаешься к свой цели, к своей мечте!"
+                android:textSize="16sp"
+                android:visibility="gone"
+                tools:ignore="MissingPrefix" />
+
+            <EditText
+                android:id="@+id/editText3"
+                fontPath="fonts/Roboto-Regular.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="14sp"
+                android:visibility="gone"
+                tools:ignore="MissingPrefix" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

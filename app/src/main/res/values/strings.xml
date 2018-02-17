@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Road To The Dream</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title.main">ROAD TO THE DREAM</string>
+</resources>

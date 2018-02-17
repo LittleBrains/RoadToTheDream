@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_my_book"
+        android:enabled="true"
+        android:icon="@drawable/ic_action_assignment"
+        android:title="Мои цели"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_catalog"
+        android:enabled="true"
+        android:title="Советы"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_profile"
+        android:enabled="true"
+        android:icon="@drawable/ic_action_image"
+        android:title="Обои"
+        app:showAsAction="ifRoom" />
+</menu>
